@@ -43,6 +43,7 @@ ul{
   line-height: 3rem;
   margin: 0.5rem; 
   font-weight: bold;
+  cursor: pointer;
 }
 .icon:hover{
   opacity: 0.8;
@@ -83,14 +84,29 @@ section{
   margin: auto;
   text-align: center;
   /* border: 1px solid black; */
+
+  overflow: hidden;
+  position: relative;
 }
 .section{
   box-sizing: border-box;
-  background-color: #dfdfdf;
+  background-color: transparent;
   width: 450px;
   height: 30rem;
   margin: auto;   
   
   overflow: scroll;
   overflow-x: hidden;
+  overflow-y: scroll; 
+}
+
+/* list style */
+.ls{
+  width: 415px;
+  height: 70px;
+  line-height: 70px;  
+  margin: 7px 7px;
+
+  background-color: #dfdfdf;
+  border-radius: 15px;
 }
