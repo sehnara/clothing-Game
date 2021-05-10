@@ -81,8 +81,7 @@ ul{
 }
 section{
   width: 499px;
-  margin: auto;
-  text-align: center;
+  margin: auto;  
   /* border: 1px solid black; */
 
   overflow: hidden;
@@ -109,4 +108,23 @@ section{
 
   background-color: #dfdfdf;
   border-radius: 15px;
+  display: flex;
 }
+
+.ls_1{  
+  width: 65px;
+  height:65px;
+  margin-left: 40px;
+  margin-right: 100px; 
+  background-size: cover;
+}
+.ls_2{  
+  margin-right: 20px;
+  font-size: 1.7em;
+  font-weight: bold;
+  color : #3f454d;  
+}
+.ls_3{
+  font-weight: bold;
+  font-size: 1.7em;
+  color: #3f454d;  }

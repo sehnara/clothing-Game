@@ -62,16 +62,24 @@ function filterList(num){
 // make a List
 function makeList(color, style){
   const li = document.createElement('li');
-  const pic = document.createElement('span');
-  const image = new Image(`img/${color}_${style.png}`);
+  const pic = document.createElement('div');  
+  const image = new Image();  
+  image.src = `./img/${color}_${style}.png`;
+  image.style.width = '70px';
   pic.appendChild(image);
+  pic.classList.add('ls_1');
 
   const detail = document.createElement('span');
-  detail.innerHTML= `${color}                ${style}`;
+  detail.innerHTML= `${color}`;
+  detail.classList.add('ls_2');
+  const detail2 = document.createElement('span');
+  detail2.innerHTML= `${style}`;
+  detail2.classList.add('ls_3');
   li.classList.add('ls');
   
   li.appendChild(pic);
   li.appendChild(detail);
+  li.appendChild(detail2);
   ul.appendChild(li);
 }
 
